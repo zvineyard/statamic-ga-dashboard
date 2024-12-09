@@ -1,0 +1,19 @@
+{
+    "name": "vineyard/statamic-ga-dashboard",
+    "autoload": {
+        "psr-4": {
+            "Vineyard\\StatamicGaDashboard\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Statamic Ga Dashboard",
+            "description": "Statamic Ga Dashboard addon"
+        },
+        "laravel": {
+            "providers": [
+                "Vineyard\\StatamicGaDashboard\\ServiceProvider"
+            ]
+        }
+    }
+}
