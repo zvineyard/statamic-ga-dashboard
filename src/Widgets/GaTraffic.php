@@ -19,8 +19,7 @@ class GaTraffic extends Widget
     public function html()
     {
         //Cache::flush();
-
-        $number_of_days = 30;
+        $number_of_days = config('statamic-ga-dashboard.days');
 
         $start = new Carbon($number_of_days.' days ago');
         $first_day = date('Y-m-d',strtotime($start->toDateString()));
