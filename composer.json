@@ -15,5 +15,8 @@
                 "Vineyard\\StatamicGaDashboard\\ServiceProvider"
             ]
         }
+    },
+    "require": {
+        "spatie/laravel-analytics": "5.0"
     }
 }
