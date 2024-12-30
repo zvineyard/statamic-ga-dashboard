@@ -16,12 +16,6 @@ class ServiceProvider extends AddonServiceProvider
     public function bootAddon()
     {
         $this->mergeConfigFrom(__DIR__ . '/../config/statamic-ga-dashboard.php', 'statamic-ga-dashboard');
-
-        if ($this->app->runningInConsole()) {
-            $this->publishes([
-                __DIR__ . '/../config/statamic-ga-dashboard.php' => config_path('statamic-ga-dashboard.php'),
-            ], 'statamic-ga-dashboard-config');
-        }
     }
 
     /*
